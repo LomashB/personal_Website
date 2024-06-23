@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark light" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Personal Website and Portfolio Website of Lomash Bhuva" />
+    <meta name="keywords" content="Personal Website, Lomash Bhuva" />
+    <meta name="author" content="Lomash Bhuva" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/tiny-slider.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- <link rel="shortcut icon" href="images/icons/lb-logo.svg" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="images/icons/lb-logo.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Lomash Bhuva | Personal Website</title>
+
+    <style>
+        @font-face {
+            font-family: 'e0SKbert4OC1:::Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            src: url(data:font/ttf;charset=utf-8;base64,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) format('truetype');
+        }
+    </style>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Z1ELDNH749');
+    </script>
+</head>
+
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="brand-icon">
+                        <svg width="60" height="60" id="e0SKbert4OC1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><text fill=#ebb606
+                                dx="0" dy="0" font-family="&quot;e0SKbert4OC1:::Montserrat&quot;" font-size="150"
+                                font-weight="800" transform="matrix(1.222882 0 0 1.161342 4.631545 212.37084)"
+                                stroke-width="0">
+                                <tspan y="0" font-weight="800" stroke-width="0">
+                                    <![CDATA[
+                            Lb.
+                            ]]>
+                                </tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="brand-name">Lomash Bhuva</div>
+                </a>
+                <button id="navToggler" class="navbar-toggler order-2 order-xl-1" type="button">
+                    <i data-icon="hamClosed" class="hamburger-close"></i>
+                    <i data-icon="hamOpen" class="hamburger-open"></i>
+                </button>
+                <div class="navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services-section">Contact Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trading-signal-section">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ama-section">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#request-section">Contact Form</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="themeToggle" class="theme-toggle">
+                    <input id="theme-toggle" type="checkbox" class="theme-toggle-input" />
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <span class="toggle-round"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home" class="main-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="hero-text"><!--Pushing Boundaries, Unlocking Potential. Designing Tomorrow, Today.-->
+                        <h1 class="hero-title">
+                            Pushing Boundaries <br />
+                            Unlocking <span class="accent"> Potential </span>
+
+                            <div class="title-circle">
+                                <i data-icon="titleCircleBlack" class="dark-theme-comp"></i>
+                                <i data-icon="titleCircleWhite" class="light-theme-comp"></i>
+                            </div>
+                        </h1>
+                        <div class="ps-3">
+                            <p>
+                                "I see technology as a powerful tool for innovation and progress. With its ability to
+                                connect, create and transform, I am dedicated to leveraging technology to bring about
+                                positive change and drive real-world impact."
+                            </p>
+
+                            <a href="https://www.linkedin.com/in/lomash-bhuva-136557222" target="_blank"
+                                class="btn primary-btn">
+                                <div class="btn-icon me-4"></div>Visit My LinkedIn!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="hero-img">
+                        <img src="./images/backgrounds/main-hero.png" alt="hero"
+                            class="img-fluid img-contain light-theme-comp" />
+                        <img src="./images/backgrounds/main-hero-dark.png" alt="hero"
+                            class="img-fluid img-contain dark-theme-comp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="about-section" class="blocks-background py-large">
+        <section class="about-us">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-md-10 col-lg-8">
+                        <div class="about-us-text">
+                            <div class="section-title">
+                                <h2 class="heading-secondary large">Professional Skills</h2>
+                            </div>
+                            <p>
+                                Hello! I'm Lomash Bhuva, a passionate MERN stack web developer with a knack for creating
+                                dynamic and responsive web applications. With a solid foundation in MongoDB, Express.js,
+                                React, and Node.js, I specialize in building full-stack solutions that are not only
+                                robust but also scalable and user-friendly. My passion lies in solving complex problems
+                                and staying updated with the latest web technologies. Let’s collaborate to bring your
+                                ideas to life!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-md-10 offset-md-2 col-lg-8 offset-lg-4">
+                        <div class="about-us-text text-end mb-0">
+                            <div class="section-title">
+                                <h2 class="heading-secondary large">Professional Experience</h2>
+                            </div>
+                            <p>
+                                With 1 year of hands-on experience in web development, I specialize in the MERN stack—MongoDB, Express.js, React, and Node.js. I have successfully contributed to diverse projects, including dynamic single-page applications and interactive web platforms. My focus is on crafting seamless user experiences and efficient, scalable back-end solutions. I am committed to continuous learning and staying updated with the latest technologies to provide innovative and effective web solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="services-section" class="wave-background">
+        <section class="services py-large">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="heading-secondary large">Contact Information</h2>
+                </div>
+                <div class="services-grid">
+
+                    <div class="service-card-wrap">
+                        <div class="service-card">
+                            <div class="service-card-img" data-icon="learn"></div>
+
+                            <h4 class="service-card-title">LinkedIn</h4>
+
+                            <p class="service-card-desc small">
+                                Connect with me on LinkedIn to stay updated on my latest professional ventures. My
+                                profile showcases my skills and experience, and I regularly share industry insights and
+                                opportunities. Let's connect and expand our networks together!
+                            </p>
+                            <div class="review-guides text-center">
+                                <a href="https://www.linkedin.com/in/lomash-bhuva-136557222/" target="_blank"
+                                    class="btn primary-btn">
+                                    <div class="me-4 btn-icon" data-icon="telegramSocial"></div>
+                                    Connect with Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card-wrap">
+                        <div class="service-card">
+                            <div class="service-card-img" data-icon="askMeAnything"></div>
+
+                            <h4 class="service-card-title">Medium</h4>
+                            <p class="service-card-desc small">
+                                Read my articles on Medium to stay informed on the latest in technology and
+                                entrepreneurship. Follow me on Medium for thought-provoking content and engaging
+                                discussions. Let's explore new ideas and trends together!
+                            </p>
+                            <div class="review-guides text-center">
+                                <a href="https://medium.com/@lomashbhuva" target="_blank" class="btn primary-btn">
+                                    <div class="me-4 btn-icon" data-icon="telegramSocial"></div>
+                                    Read My Blogs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card-wrap">
+                        <div class="service-card">
+                            <div class="service-card-img" data-icon="cyptoNews"></div>
+
+                            <h4 class="service-card-title">GitHub</h4>
+                            <p class="service-card-desc small">
+                                Check out my GitHub profile for a showcase of my coding projects and contributions.
+                                Explore my repositories for examples of my technical skills and experience. Let's
+                                collaborate and build something amazing together!
+                            </p>
+                            <div class="review-guides text-center">
+                                <a href="https://github.com/LomashB" target="_blank" class="btn primary-btn">
+                                    <div class="me-4 btn-icon" data-icon="telegramSocial"></div>
+                                    Read My Blogs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="trading-signal-section" class="wave-background">
+        <section class="signals py-large">
+            <div class="container">
+                <div class="section-title text-lg-end">
+                    <h2 class="heading-secondary large">About Me</h2>
+                </div>
+            </div>
+            <div class="signals-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="signal-text">
+                                <p>
+                                    Hello, I'm Lomash Bhuva, a technology enthusiast with a love for sci-fi movies and
+                                    Hindu scriptures. I am always fascinated by the way technology has revolutionized
+                                    our world, and I enjoy exploring its endless possibilities. When I'm not working on
+                                    projects or learning new skills, I like to pursue my hobbies and spend time with my
+                                    family. Music is another passion of mine, and I enjoy listening to a wide variety of
+                                    genres. I also enjoy sharing my knowledge and experience with others by posting
+                                    blogs about my insights and discoveries in the tech world. I believe in continuous
+                                    learning and growth, and I look forward to the exciting opportunities that lie
+                                    ahead.
+                                </p>
+                                <p class="additional-note">
+                                    My passion for technology and innovation fuels my drive to continuously learn and stay ahead of the curve with the latest trends and advancements in my field. I thrive on tackling new challenges and finding creative solutions that push the boundaries of what's possible in web development.</p>
+
+                                <div class="d-block d-lg-none mb-5 mb-lg-0">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="signals-ex-img">
+                                                <img src="./images/matic-chart-light.png" alt="matic chart light"
+                                                    class="img-fluid img-contain light-theme-comp" />
+                                                <img src="./images/matic-chart-dark.png" alt="matic chart dark"
+                                                    class="img-fluid img-contain dark-theme-comp" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="signal-img light-theme-comp">
+                        <img src="./images/signal-banner-light.png" alt="trade signal" class="img-fluid img-contain" />
+                    </div>
+                    <div class="signal-img dark-theme-comp">
+                        <img src="./images/signal-banner-dark.png" alt="trade signal" class="img-fluid img-contain" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+    </section>
+
+    <section class="blocks-background ama-wrap">
+        <section id="ama-section" class="ama text-center">
+            <div class="container">
+                <div class="section-title">
+                    <h4 class="heading-secondary large">
+                        Technology and Tools I use
+                    </h4>
+                </div>
+            </div>
+
+            <div id="brandsSlider" class="brands-slider">
+                
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/1.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/2.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/3.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/4.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/5.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/6.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/7.webp" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/8.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/9.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a class="slider-item-inner">
+                        <img src="./images/10.png" alt="slider item" class="img-fluid img-contain"
+                            width="40%" />
+                    </a>
+                </div>
+                
+                
+            </div>
+            <div class="container">
+                <div class="ama-desc">
+
+                    <div class="review-guides">
+                        <a href="https://github.com/LomashB" target="_blank" class="btn primary-btn">
+
+                            Checkout My Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="request-section" class="request-form-wrap">
+            <div class="container">
+                <div class="request-form-border">
+                    <form id="email-form" name="email-form" data-name="Email Form" class="request-form" method="post"
+                        action="https://formspree.io/f/mleqdeee">
+                        <div class="section-title text-center">
+                            <h3 class="heading-tertiary">Contact Form Inquiry</h3>
+                            <p class="title-desc">
+                                Fill in the form below, and i’ll get back to you soon!
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <input id="name" type="text" class="form-input" name="fullName" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <input id="emailid" type="text" class="form-input" name="emailid" placeholder="Email ID" />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="Description" class="form-input" name="description"
+                                placeholder="Description"></textarea>
+                        </div>
+
+                        <div class="form-submit text-center">
+                            <button type="submit" class="btn primary-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-7">
+                        <a class="navbar-brand footer-brand" href="#">
+                            <div class="brand-icon">
+                                <svg width="50" height="50" id="e0SKbert4OC1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"
+                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><text
+                                        dx="0" dy="0" font-family="&quot;e0SKbert4OC1:::Montserrat&quot;"
+                                        font-size="150" font-weight="800"
+                                        transform="matrix(1.222882 0 0 1.161342 4.631545 212.37084)" stroke-width="0">
+                                        <tspan y="0" font-weight="800" stroke-width="0">
+                                            <![CDATA[
+                                    Lb.
+                                    ]]>
+                                        </tspan>
+                                    </text>
+                                </svg>
+                            </div>
+                            <div class="brand-name">Lomash Bhuva</div>
+                        </a>
+                        <ul class="footer-social">
+                            <li>
+                                <a href="https://www.instagram.com/__lmsh__/" target="_blank">
+                                    <i data-icon="instagramSocial"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/+916352901056" target="_blank">
+                                    <i data-icon="telegramSocial"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=" target="_blank">
+                                    <i data-icon="twitterSocial"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#home" class="small">Home</a></li>
+                                <li><a href="#about-section" class="small">About</a></li>
+                                <li>
+                                    <a href="#services-section" class="small">Contact Info</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#ama-section" class="small">Projects</a></li>
+                                <li>
+                                    <a href="#request-section" class="small">Contact Form Inquiry</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">Lomash Bhuva © All rights reserved 2023.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/tiny-slider.js"></script>
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
